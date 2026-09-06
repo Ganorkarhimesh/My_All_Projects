@@ -1,4 +1,4 @@
-# VoxShield — SIH26104
+# VoiceTrust — SIH26104
 
 AI-Powered Real-Time Detection and Prevention of Voice Cloning Impersonation Attacks.
 
@@ -9,14 +9,80 @@ AI-Powered Real-Time Detection and Prevention of Voice Cloning Impersonation Att
 
 ## Setup
 
+Install the dependencies one by one in your VSCode terminal (inside the project folder):
+
+```bash
+pip install fastapi
+```
+
+```bash
+pip install uvicorn
+```
+
+```bash
+pip install sqlalchemy
+```
+
+```bash
+pip install librosa
+```
+
+```bash
+pip install numpy
+```
+
+```bash
+pip install python-multipart
+```
+
+```bash
+pip install websockets
+```
+
+Or, if you'd rather do it in one shot:
+
 ```bash
 pip install fastapi uvicorn sqlalchemy librosa numpy python-multipart websockets
-```
+```   
+
+
+
+**Notes:**
+- If `pip` isn't recognized, use `pip3` instead, or `python -m pip install <package>`.
+- `librosa` is a heavier package (pulls in `numba`, `soundfile`, `scipy`, etc.) —
+  it can take a couple of minutes to install, that's normal.
+
+### Fixing yellow underline / "import could not be resolved" errors
+
+If VSCode shows yellow squiggly lines under the imports in `main.py` or
+`database.py` even after installing the packages above, that's a **Pylance
+editor warning**, not an actual code bug — it means VSCode is pointed at a
+different Python interpreter than the one you installed the packages into.
+
+1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) and run **"Python: Select
+   Interpreter"**. Pick the same environment you ran `pip install` in
+   (especially important if you're using a virtual environment / venv).
+2. Reload VSCode: `Ctrl+Shift+P` → **"Developer: Reload Window"**.
+3. Confirm the packages installed correctly by running:
+   ```bash
+   python -c "import fastapi; import librosa; import sqlalchemy"
+   ```
+   No errors printed = the packages are fine, it was purely an editor/interpreter
+   mismatch.
+4. Still stuck? Run `python -m pip show fastapi` and check the `Location:` path
+   it prints against the interpreter path shown in the bottom-right corner of
+   VSCode. If they don't match, that's the mismatch — switch the interpreter to
+   match the install location.
 
 ## Run
 
 ```bash
 python main.py
+```
+and
+
+```bash
+python -m uvicorn main:app --reload
 ```
 
 Then open **http://localhost:8000** in Chrome (mic permission needed).
