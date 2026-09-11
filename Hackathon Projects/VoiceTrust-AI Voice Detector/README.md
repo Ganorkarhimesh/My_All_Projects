@@ -114,8 +114,8 @@ Threshold for flagging `SPOOF_DETECTED` is **88% confidence** (config value
   smoother/faster detection.
 
 <img width="1917" height="1063" alt="Screenshot 2026-09-11 110655" src="https://github.com/user-attachments/assets/08146d3d-f773-4689-8202-2becb142b080" />
-![Uploading Screenshot 2026-09-11 110716.png…]()
-![Uploading Screenshot 2026-09-11 110735.png…]()
-![Uploading Screenshot 2026-09-11 110851.png…]()
+<img width="1916" height="906" alt="Screenshot 2026-09-11 110716" src="https://github.com/user-attachments/assets/40d7c19c-b4c1-4f4e-a655-bd22f403911e" />
+<img width="1917" height="893" alt="Screenshot 2026-09-11 110735" src="https://github.com/user-attachments/assets/aa5c24b7-18d6-4c87-a66c-f9ffc00015cf" />
+<img width="1916" height="940" alt="Screenshot 2026-09-11 110851" src="https://github.com/user-attachments/assets/50a76ba7-3c3e-4d00-8fa6-352ce6dba434" />
 <img width="1912" height="892" alt="Screenshot 2026-09-11 110929" src="https://github.com/user-attachments/assets/52cb123c-c602-4e8b-99c5-73cf4b378824" />
 <img width="1907" height="892" alt="Screenshot 2026-09-11 111729" src="https://github.com/user-attachments/assets/83f36f3e-e559-49c8-8fe1-cff5534d7976" />
